@@ -1,0 +1,50 @@
+<h1>Fire Emblem Battle Calculator</h1>
+
+<div class="row">
+    <div class="col-xs-1 form-group">
+        <label>Your Attack</label>
+        <input class="form-control" type="number" [(ngModel)]="atkInput" />
+    </div>
+    <div class="col-xs-1 form-group">
+        <label>Enemy Attack</label>
+        <input class="form-control" type="number" [(ngModel)]="enemyAtk" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-1 form-group">
+        <label>Your Speed</label>
+        <input class="form-control" type="number" [(ngModel)]="spdInput" />
+    </div>
+    <div class="col-xs-1 form-group">
+        <label>Enemy Speed</label>
+        <input class="form-control" type="number" [(ngModel)]="enemySpd" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-1 form-group">
+        <label>Your Defense</label>
+        <input class="form-control" type="number" [(ngModel)]="defInput" />
+    </div>
+    <div class="col-xs-1 form-group">
+        <label>Enemy Defense</label>
+        <input class="form-control" type="number" [(ngModel)]="enemyDef" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-1 form-group">
+        <label>Your Resistance</label>
+        <input class="form-control" type="number" [(ngModel)]="resInput" />
+    </div>
+    <div class="col-xs-1 form-group">
+        <label>Enemy Resistance</label>
+        <input class="form-control" type="number" [(ngModel)]="enemyRes" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-1">
+        <button class="btn btn-primary" (click)="sendData()">Battle</button>
+    </div>
+    <div class="col-xs-1">
+        <button class="btn btn-default" (click)="randomizeStats()">Randomize</button>
+    </div>
+</div>
